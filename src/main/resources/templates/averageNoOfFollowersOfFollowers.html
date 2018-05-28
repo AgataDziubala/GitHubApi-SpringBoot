@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>How many followers</title>
+    <head th:include="navi :: head">
+<body>
+<div class="container-fluid">
+    <div th:include="navi :: menu"></div>
+    <div class="card" style="width: 50%">
+        <div class="card-body">
+            <form action="#" th:action="@{/github/howManyFollowers}" th:object="${user}" method="POST">
+                <div class="col-xs-9">
+                    <div class="form-group">
+                        <label for="login">User login:</label>
+                        <input type="text" class="form-control" th:field="*{login}">
+                    </div>
+                    <button type="submit" class="btn btn-success">Display</button>
+                    <button type="reset" class="btn btn-warning">Reset</button>
+                </div>
+            </form>
+            <div th:object="${user}" th:if="${user.login != null}">
+                <div class="col-xs-12">
+                    <h3>
+                        <label class="alert alert-info" th:text="${stats}"></label>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
