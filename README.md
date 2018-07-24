@@ -1,6 +1,6 @@
 # GitHubApi-SpringBoot
 
-A Spring Boot application twhich acquires data from GitHub REST API v3 and saves users to database. The application also displays statistics of given User (e.g., followers, days on GitHub, number of repos).
+A Spring Boot application which acquires data from GitHub REST API v3 and saves users to database. The application also displays statistics of given User (e.g., followers, days on GitHub, number of repos).
 
 ## Running
 
