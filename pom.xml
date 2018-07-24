@@ -4,13 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pl.b2bnetwork</groupId>
-    <artifactId>DreamTeam</artifactId>
+    <groupId>pl.agatadziubala</groupId>
+    <artifactId>GitHubApi-SpringBoot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>DreamTeam</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <name>GitHubApi-SpringBoot</name>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -103,6 +102,11 @@
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>2.0.3.RELEASE</version>
                 </plugin>
             </plugins>
         </pluginManagement>
