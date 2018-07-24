@@ -22,5 +22,5 @@ A Spring Boot application twhich acquires data from GitHub REST API v3 and saves
 * [MySQL](https://www.mysql.com/)
 * [JUnit](https://junit.org/junit4/)
 * [Mockito](http://site.mockito.org/)
-* [Thymeleaf] (https://www.thymeleaf.org/)
+* [Thymeleaf](https://www.thymeleaf.org/)
 * [Bootstrap](https://getbootstrap.com/)
