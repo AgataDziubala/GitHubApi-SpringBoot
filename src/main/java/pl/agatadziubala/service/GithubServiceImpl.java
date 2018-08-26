@@ -8,7 +8,9 @@ import pl.agatadziubala.dto.RepoDto;
 import pl.agatadziubala.dto.UserDto;
 
 import java.time.temporal.ChronoUnit;
-import java.util.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -106,4 +108,5 @@ public class GithubServiceImpl implements GithubService {
 
         return apiAccess.followersOfAUser(login);
     }
+
 }
